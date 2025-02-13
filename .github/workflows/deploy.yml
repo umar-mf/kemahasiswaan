@@ -1,0 +1,24 @@
+name: Deploy ke InfinityFree
+
+on:
+  push:
+    branches:
+      - main # Menjalankan deployment saat ada perubahan di branch utama
+
+jobs:
+  deploy:
+    name: Upload ke InfinityFree
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Upload ke FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ftpupload.net # Ganti dengan server FTP dari InfinityFree
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: /htdocs/ # Ganti sesuai folder root di InfinityFree
