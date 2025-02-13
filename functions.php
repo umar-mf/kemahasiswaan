@@ -1,5 +1,7 @@
 <?php 
 $conn = mysqli_connect("sql12.freesqldatabase.com", "sql12762573", "u5rQcSVurh", "sql12762573"); 
+// $conn0 = mysqli_connect("localhost", "root", "", "phpdasar"); 
+// $conn2 = mysqli_connect("sql213.infinityfree.com", "if0_38298252", "newLPifa1", "if0_38298252_XXX"); 
 
 function query($query){
     global $conn;
