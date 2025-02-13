@@ -1,5 +1,5 @@
 <?php 
-$conn = mysqli_connect("localhost", "root", "", "phpdasar"); 
+$conn = mysqli_connect("sql12.freesqldatabase.com", "sql12762573", "u5rQcSVurh", "sql12762573"); 
 
 function query($query){
     global $conn;
