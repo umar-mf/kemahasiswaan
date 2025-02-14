@@ -1,4 +1,6 @@
 <?php 
+die("Situs sedang dalam perbaikan. Silakan kembali nanti."); 
+// maintenance
 require "functions.php";
 $mahasiswa = query("SELECT * FROM mahasiswa");
 if (isset($_POST["search"])) {

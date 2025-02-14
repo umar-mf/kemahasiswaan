@@ -1,6 +1,4 @@
 <?php 
-die("Situs sedang dalam perbaikan. Silakan kembali nanti."); 
-// maintenance
 require 'functions.php';
 if (isset($_POST["submit"])){
     $result = add($_POST);
