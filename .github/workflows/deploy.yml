@@ -18,7 +18,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ftpupload.net # Ganti dengan server FTP dari InfinityFree
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          username: ${{ secrets.FTP_USERNAME_STG }}
+          password: ${{ secrets.FTP_PASSWORD_STG }}
           local-dir: ./
           server-dir: /htdocs/ # Ganti sesuai folder root di InfinityFree
