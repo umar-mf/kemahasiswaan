@@ -3,7 +3,7 @@ name: Deploy ke InfinityFree
 on:
   push:
     branches:
-      - main # Menjalankan deployment saat ada perubahan di branch utama
+      - develop # Menjalankan deployment saat ada perubahan di branch utama
 
 jobs:
   deploy:
